@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Radio BIT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--<style type="text/css">
+      /*body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }*/
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 900px;
+      }
+      /*.container-narrow > hr {
+        margin: 30px 0;
+      }*/
+        </style>-->
+        <!--<link rel="stylesheet" href="css/bootstrap.responsive.css">-->
+        <link rel="stylesheet" href="css/jquery-ui.custom.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body style="background:#ccc;">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="content container">
+            <!--header-->
+        	<div class="">
+        		<div class="hero-unit ui-body-a row zero-radius" style="margin:0px;padding:2%;">
+        			<div class="clearfix">
+                        <div class="thumbnail pull-left" style="margin:30px 0 0 0;border:none">
+                            <h1><a href="index.html" class="brand">Radio BIT</a></h1>
+                            <p>Dedicate...</p>
+                        </div>         			
+                        <div class="thumbnail pull-right" style="border:none">
+        					<img src="img/radio3.png" style="width:128px;height:128px;">
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+            <!--header end-->
+            <!--nav menu-->
+            <div id="head-menu">
+                <div class="navbar navbar-inverse" style="margin-bottom:0px;">
+                    <div id="myTabs" class="navbar-inner zero-radius">
+                        <a href="#" class="brand">Radio BIT</a>
+                        <ul id="main-menu" class="idTabs nav pull-right">
+                            <li class="active"><a href="#home-div"><span class="icon icon-white icon-home"></span>&nbsp;Home</a></li>
+                            <li><a href="#login-div"><span class="icon icon-white icon-user"></span>&nbsp;Login</a></li>
+                            <li><a href="#reg-div"><span class="icon icon-white icon-pencil"></span>&nbsp;Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--nav menu end-->
+        	<div class="tab-container ui-body-a" style="height:450px;">
+        		<div id="home-div" class="ui-body ui-body-c row zero-radius row-mod">
+                    <div class="ui-header ui-bar-b" style="margin-bottom:20px">
+                        <h1 class="ui-title">Now Playing</h1>
+                    </div>      
+        			<div class="span6 ui-widget" style="padding:0;margin:0px;">
+        				<div style="text-align:center;">
+        					<div id="playerArea" style="height:230px">
+                                <div class="containerP">
+                                    <div class="player gradient">
+                                    <a class="button gradient play-button" id="play" href="javascript:" title="Play" style="display:none"></a>
+                                    <a class="button gradient stop-button" id="stop" href="javascript:" title="Stop"></a>
+                                    <div id="vol-slider" title="Adjust volume"></div>
+                                    <a class="button gradient mute-button" id="mute" href="javascript:" title="UnMute" style="display:none"></a>
+                                    <a class="button gradient muted-button" id="muted" href="javascript:" title="Mute"></a>
+                                     </div><!-- / player -->
+                                </div>
+                            </div>
+        				</div>
+        			</div>
+        			<div class="span6" style="padding:0;margin:0" id="song-playing">
+        				<div class="" style="text-align:center;width:100%;">
+        					<ul id="now-playing" class="ui-listview ui-listview-inset ui-shadow">
+        						<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" style="padding-left:30px">
+                                    <div class="ui-btn-inner ui-li ui-corner-top">
+                                    <div class="ui-btn-text">
+                                        <h4>Song</h4>
+                                    </div>
+                                    <span class="ui-icon ui-icon-play ui-icon-shadow"></span>
+                                    </div>
+                                </li>
+        						<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" style="padding-left:30px">
+        							<div class="ui-btn-inner ui-li ui-corner-top">
+        							<div class="ui-btn-text">
+        								<h4>Album</h4>
+        							</div>
+        							<span class="ui-icon ui-icon-play ui-icon-shadow"></span>
+        							</div>
+        						</li>
+        						<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" style="padding-left:30px">
+        							<div class="ui-btn-inner ui-li ui-corner-top">
+        							<div class="ui-btn-text">
+        								<h4>Requested By</h4>
+        							</div>
+        							<span class="ui-icon ui-icon-play ui-icon-shadow"></span>
+        							</div>
+        						</li>
+        						<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" style="padding-left:30px">
+        							<div class="ui-btn-inner ui-li ui-corner-top">
+        							<div class="ui-btn-text">
+        								<h4>Dedicated To</h4>
+        							</div>
+        							<span class="ui-icon ui-icon-play ui-icon-shadow"></span>
+        							</div>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+                <div id="login-div" class="ui-body ui-body-c row zero-radius row-mod" style="display:none">
+                    <div class="ui-header ui-bar-b">
+                        <h1 class="ui-title">Login to Radio BIT</h1>
+                    </div>
+                    <div style="max-width:300px;margin:0 auto;margin-top:20px">
+                        <form action="" style="border:1px solid #E5E5E5;padding:40px">
+                            <input type="text" placeholder="Username" name="username" />
+                            <input type="password" placeholder="Password" name="password" />
+                            <label class="checkbox" for="remember-me"><input type="checkbox" id="remember-me" name="remember-me">&nbsp;Remember Me</label>
+                            <button class="ui-btn ui-shadow ui-mini ui-btn-corner-all ui-btn-up-b" type="submit"><span class="ui-btn-inner">Login</span></button>
+                        </form>
+                    </div>
+                </div>
+                <div id="reg-div" class="ui-body ui-body-d row zero-radius row-mod" style="display:none">
+                    <div class="ui-header ui-bar-b">
+                        <h1 class="ui-title">Register</h1>
+                    </div>
+                    <div style="max-width:600px;margin:0 auto;margin-top:20px">
+                        <form method="post" class="form-horizontal" style="border:1px solid #E5E5E5;padding:40px">
+                            <div class="control-group">
+                                <label class="control-label" for="reg_username">Username</label>
+                                <div class="controls">
+                                <input type="text" name="reg_username" id="reg_username" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="reg_email">Email</label>
+                                <div class="controls">
+                                <input type="text" id="reg_email" name="reg_email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="reg_password">Password</label>
+                                <div class="controls">
+                                <input type="text" id="reg_password" name="reg_password" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="cpassword">Confirm Password</label>
+                                <div class="controls">
+                                <input type="text" id="cpassword" name="cpassword" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                 <button type="submit" class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+        	</div>
+            <div class="content-primary">
+                <div class="ui-header ui-bar-a">
+                    <h1 class="ui-title">Last Songs Played</h1>
+                </div> 
+                <ol class="ui-listview">
+                    <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+                        <div class="ui-btn-inner ui-li">
+                            <div class="ui-btn-text"><a href="" class="ui-link-inherit">Challa</a></div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+                        <div class="ui-btn-inner ui-li">
+                            <div class="ui-btn-text"><a href="" class="ui-link-inherit">Challa</a></div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+                        <div class="ui-btn-inner ui-li">
+                            <div class="ui-btn-text"><a href="" class="ui-link-inherit">Challa</a></div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+                        <div class="ui-btn-inner ui-li">
+                            <div class="ui-btn-text"><a href="" class="ui-link-inherit">Challa</a></div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+                        <div class="ui-btn-inner ui-li">
+                            <div class="ui-btn-text"><a href="" class="ui-link-inherit">Challa</a></div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+                        <div class="ui-btn-inner ui-li">
+                            <div class="ui-btn-text"><a href="" class="ui-link-inherit">Challa</a></div>
+                            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>   
+        </div>
+        <script src="js/vendor/jquery-1.8.0.min.js"></script>
+        <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+        <script src="js/jquery.idTabs.min.js"></script>
+        <!--<script src="js/jquery.mobile.min.js"></script>-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>
